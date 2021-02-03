@@ -18,3 +18,30 @@ Since the db has just been created it needs to be populated, so choose Download 
 
 Once you hit download and the data is recieved and inserted in the db the table of the db will update.
 
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/dl_to_db.png)
+
+To go back to main menu hit return. Now that you have some data in the db you can view the db, vhich is essentially the same as the db view in the Download Data, but this page can be built out for e.g. updating the db manually.
+
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/view_db)
+
+More interesting is the Load Data option. This is used to visualize the timeseries. Before plotting, the data needs to be read from the database and loaded into memory. Use the stock ticker to call up a time series and hit load.
+
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/choose_to_display.png)
+
+The called up stock will appear in the Loaded Data section
+
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/load.png)
+
+You can now choose Candle or Line to graph the stock
+
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/candle.png)
+
+You can also load multiple stocks and plot them in a normalized line graph
+
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/multi_line_plot)
+
+
+
+
+
+
