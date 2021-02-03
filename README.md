@@ -6,4 +6,5 @@ Download web_stock_search_db and templates. Make sure you're in the right folder
 
 First time the program is run it will creat the database stock.db in the same folder as the program. The db has two tables, one for name and length of the time series and one for the data.
 
-![alt text] ()
+![alt text] (https://github.com/CJRockball/Stock_DB/blob/main/Images/Picture2.png)
+
