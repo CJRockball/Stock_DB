@@ -8,3 +8,6 @@ First time the program is run it will creat the database stock.db in the same fo
 
 ![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/Picture2.png)
 
+When the program starts it loads a web page with three choices Download Data, Load Data and View Database. 
+
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/Link_view.png)
