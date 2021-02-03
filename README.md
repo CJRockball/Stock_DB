@@ -38,7 +38,7 @@ You can now choose Candle or Line to graph the stock. Tick the Candle radio butt
 
 You can also load multiple stocks and plot them in a normalized line graph
 
-![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/multi_line_plot)
+![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/multi_line_plot.png)
 
 
 
