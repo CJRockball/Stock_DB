@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-1.4.0.min.js"
+        crossorigin="anonymous">
+</script>
+    {{ script | safe }}
+<title>Stock Loader</title>
+
+<style>
+.column {
+    float:left;
+    width: 300px;
+    padding-left: 5px;
+}
+
+.page {
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: 3em;
+    padding-left: 3em;
+}
+</style>
+
+
+</head>
+<body>
+<div class="page">
+    <div class="column">
+        <h1>Load Data</h1>
+        <form method="post">
+        <p>Choose stock</p>
+        <input name="stock_ticker"/>
+        <br>
+        <p>Start date 2020-01-01      End date 2021-01-19</p>
+        <p>
+        <input name="start" value="2020-01-01">
+        <input name="end" value="2020-01-10">
+        </p>
+        <input type="submit" name="Load" value="Load"/>
+        <input type="submit" name="Plot" value="Plot"/>
+        <input type="submit" name="Clear" value="Clear"/>
+        <input type="submit" name="Return", value="Return"/><br>
+        <input type="radio" name="graph" value="candle">
+        <label for="candle">Candle</label>
+        <input type="radio" name="graph" value="line">
+        <label for="line">Line</label>
+        <input type="radio" name="graph" value="nline">
+        <label for="line">Normal Line</label>
+        </form>
+    </div>
+    <div class="column">
+        <h1>Loaded Data</h1>
+        <table>
+        <thead><tr><th>Tickers</th><th>Start date</th><th>End date</th></tr></thead>
+        {% for load in session["loaded"] %}
+        <tr><td>{{load[0]}}</td><td>{{load[1]}}</td><td>{{load[2]}}</td></tr>
+        {% endfor %}
+        </table>
+    </div>
+    <div class="column">
+        <h1>Database</h1>
+        <table>
+        <thead><tr><th>Tickers</th><th>Name</th><th>Start date</th><th>End date</th></tr></thead>
+        {% for stock in db_stocks %}
+        <tr><td>{{stock[0]}}</td><td>{{stock[1]}}</td><td>{{stock[2]}}</td><td>{{stock[3]}}</td></tr>
+        {% endfor %}
+        </table>
+    </div>
+</div>
+<br>
+<div style="width: 20%; display: inline-block;">
+    {{ div | safe }}
+</div>
+</body>
+</html>

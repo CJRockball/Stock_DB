@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stock Download</title>
+<style>
+.column {
+    float:left;
+    width: 300px;
+    padding-left: 5px;
+}
+
+.page {
+    content: "";
+    display: table;
+    clear: both;
+    padding-top: 3em;
+    padding-left: 3em;
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+    <div class="column">
+<h1>Download Data</h1>
+<form method="post">
+<p>Choose stock</p>
+<input name="stock_ticker"/>
+<input name="stock_name"/>
+<br>
+<p>Start date 2020-01-01      End date 2021-01-19</p>
+<p>
+<input name="start" value="2020-01-01">
+<input name="end" value="2020-01-10">
+</p>
+<p>
+<input type="submit" name="Download" value="Download"/>
+<input type="submit" name="Return", value="Return"/>
+</p>
+</form>
+</div>         
+<div class="column">
+<h1>&nbsp;</h1>
+<table>
+<thead><tr><th>Tickers</th><th>Name</th><th>Start date</th><th>End date</th></tr></thead>
+{% for stock in db_stocks %}
+<tr><td>{{stock[0]}}</td><td>{{stock[1]}}</td><td>{{stock[2]}}</td><td>{{stock[3]}}</td></tr>
+{% endfor %}
+</table>
+</div>
+</div>
+</body>
+</html>
+
+
+
