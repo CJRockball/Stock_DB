@@ -32,7 +32,7 @@ The called up stock will appear in the Loaded Data section
 
 ![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/load.png)
 
-You can now choose Candle or Line to graph the stock
+You can now choose Candle or Line to graph the stock. Tick the Candle radio button and hit Plot.
 
 ![alt text](https://github.com/CJRockball/Stock_DB/blob/main/Images/candle.png)
 
